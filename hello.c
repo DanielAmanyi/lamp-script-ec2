@@ -4,7 +4,7 @@
 int main(void)
 
 {
-    my_name = get_string ("what is your name? \n");
-    printf("Hello %s\n" my_name);
+    string input_name = get_string ("what is your Last name?  ");
+    printf ("Hello, and welcome %s\n", input_name);
 
 }
