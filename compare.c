@@ -10,5 +10,9 @@ if (x<y)
 {
 printf ( "x is less than y . \n");
 }
+else
+{
+    printf ( "y is greater than x \n");
+}
 
 }
