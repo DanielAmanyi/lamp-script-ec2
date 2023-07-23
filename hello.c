@@ -5,5 +5,5 @@ int main(void)
 
 {
     string hi_hi = get_string("what is your name?");
-    printf ("hi_hi", hi_hi );
+    printf ("hi_hi %\n", hi_hi );
 }
