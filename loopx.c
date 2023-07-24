@@ -3,14 +3,11 @@
 
 int main(void)
 {
-    int x = 0;
-    while (x < 3)
+   for (int x=0; x<3; x++)
     {
         printf ("Hello \n");
-        x =(x+1);
 
     }
-    return 0;
 }
 
 
