@@ -16,6 +16,6 @@ printf ("First number is Larger \n");
 }
 else
 {
-printf ("both numbers are equal \n");
+printf ("both numbers are equal ");
 }
 }
