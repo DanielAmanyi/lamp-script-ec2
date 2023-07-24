@@ -4,19 +4,19 @@
 int main(void)
 
 {
-    int first_number = get_int ("insert your first number   ");
-    int second_number = get_int ("insert your second number   ");
+int first_number = get_int ("insert your first number   ");
+int second_number = get_int ("insert your second number   ");
 
-    if (first_number < second_number)
-    {
+if (first_number < second_number)
+{
         printf ( "Second Number is greater than Firstnumber \n" );
-    }
-    if (first_number > second_number)
-    {
+}
+if (first_number > second_number)
+{
         printf ( "First Number is Greter than Second Number \n" );
-    }
-    else
-    {
+}
+else
+{
         printf ( "The two numbers are Exact and same \n" );
-    }
+}
 }
