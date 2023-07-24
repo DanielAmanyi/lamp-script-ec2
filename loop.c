@@ -7,6 +7,6 @@ int count = 3;
 while (count > 0)
 
 {
-    printf (count);
+    printf ("Hello \n");
     count = -1;
 }
