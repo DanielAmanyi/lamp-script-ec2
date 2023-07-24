@@ -7,7 +7,7 @@ int main(void)
     while (x < 3)
     {
         printf ("Hello \n");
-        (x+ = 1);
+        x =(x+1);
 
     }
     return 0;
