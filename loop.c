@@ -8,5 +8,5 @@ while (count > 0)
 
 {
     printf ("Hello \n");
-    count = -1;
+    count = count -1;
 }
