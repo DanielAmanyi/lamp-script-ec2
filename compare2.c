@@ -5,7 +5,6 @@ int main (void)
 {
     int x = get_int ("insert first number  \n");
     int y = get_int ("insert second number  \n");
-
 if (y<x)
 {
     print (" x is greater than y \n");
