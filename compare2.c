@@ -1,5 +1,5 @@
-#include<cs50.h>
 #include<stdio.h>
+#include<cs50.h>
 
 int main (void)
 {
@@ -7,13 +7,13 @@ int main (void)
     int y = get_int ("insert second number  \n");
 if (y<x)
 {
-    print (" x is greater than y \n");
+    printf (" x is greater than y \n");
 }
 if (y>x)
 {
-    print ("y is greater than x \n");
+    printf ("y is greater than x \n");
 }
 else
 {
-    print ("y is eaqual to x  \n");
+    printf ("y is eaqual to x  \n");
 }
