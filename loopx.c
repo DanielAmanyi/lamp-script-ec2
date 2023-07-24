@@ -9,7 +9,7 @@ while (count < 6)
 
 {
     printf ("Hello \n");
-    count = count +3;
+    count = count +1;
 }
 return 0;
 }
