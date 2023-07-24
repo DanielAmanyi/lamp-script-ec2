@@ -1,15 +1,9 @@
-#include <cs50.h>
+#include<cs50.h>
 #include<stdio.h>
 
-int main (void)
+int main(void)
 {
-int count = 0;
-
-while (count < 6)
-
-{
-    printf ("Hello \n");
-    count = count +1;
-}
-return 0;
+    
+    int x = 3
+    while x =
 }
