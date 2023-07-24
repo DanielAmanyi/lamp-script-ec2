@@ -3,13 +3,13 @@
 
 int main (void)
 {
-int count = 3;
+int count = 0;
 
-while (count > 0)
+while (count >= 3)
 
 {
     printf ("Hello \n");
-    count = count -1;
+    count = count +1;
 }
 return 0;
 }
