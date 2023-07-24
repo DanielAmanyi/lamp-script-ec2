@@ -3,15 +3,15 @@
 
 int main(void)
 {
-int first_number = get_int ("Please enter your first number \n");
+int First_number = get_int ("Please enter your first number \n");
 int second_number = get_int ("Please enter your second number \n");
 
-if (first_number<second_number)
-{
+if (First_number < second_number)
+ {
 printf("Second Number is Larger \n");
 }
-if (first_number>second_number)
-{
+if (First_number > second_number)
+ {
 printf ("First number is Larger \n");
 }
 else
