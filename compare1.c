@@ -7,7 +7,7 @@ int main(void)
     int first_number = get_int ("insert your first number  /n");
     int Second_number = get_int ("insert your second number  /n");
 
-    if (first_number < second_number);
+    if (first_number < second_number)
     {
         printf ( "Second Number is greater than Firstnumber /n");
     }
