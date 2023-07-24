@@ -3,8 +3,8 @@
 
 int main (void);
 
-int count = count +1
-while count = count = 3;
+int count = 3;
+while (count > 0)
 
 {
     printf (count);
