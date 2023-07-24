@@ -4,6 +4,7 @@
 int main (void);
 
 int count = 3;
+
 while (count > 0)
 
 {
