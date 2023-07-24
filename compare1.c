@@ -9,14 +9,14 @@ int main(void)
 
     if (first_number < second_number)
     {
-        printf ( "Second Number is greater than Firstnumber /n" );
+        printf ( "Second Number is greater than Firstnumber \n" );
     }
     if (first_number > second_number)
     {
-        printf ( "First Number is Greter than Second Number /n" );
+        printf ( "First Number is Greter than Second Number \n" );
     }
     else
     {
-        printf ( "The two numbers are Exact and same /n" );
+        printf ( "The two numbers are Exact and same \n" );
     }
 }
