@@ -5,11 +5,11 @@ int main (void)
 {
 int count = 0;
 
-while (count < 3)
+while (count < 6)
 
 {
     printf ("Hello \n");
-    count = count +1;
+    count = count +3;
 }
 return 0;
 }
