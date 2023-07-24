@@ -3,11 +3,11 @@
 
 int main (void)
 
-int count = get_int("Enter number \n")
+int count = 
 count = count+1
 
 while (count > 0)
 {
     printf (count);
-    count --;
+    count = -1;
 }
