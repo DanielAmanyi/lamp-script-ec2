@@ -3,7 +3,12 @@
 
 int main(void)
 {
-    
     int x = 3
-    while x =
+    while x = (x <= 3)
+    {
+        printf ("Hello");
+        x = (x-1);
+
+    }
+    return 0;
 }
