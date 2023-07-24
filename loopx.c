@@ -4,7 +4,7 @@
 int main(void)
 {
     int x = 0;
-    while (x <= 3)
+    while (x < 3)
     {
         printf ("Hello \n");
         x = (x+1);
@@ -12,3 +12,5 @@ int main(void)
     }
     return 0;
 }
+
+
