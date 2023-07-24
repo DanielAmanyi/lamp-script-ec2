@@ -3,11 +3,11 @@
 
 int main(void)
 {
-    int x = 3;
+    int x = 0;
     while (x <= 3)
     {
-        printf ("Hello");
-        x = (x-1);
+        printf ("Hello \n");
+        x = (x+1);
 
     }
     return 0;
