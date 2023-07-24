@@ -10,7 +10,7 @@ if (y<x)
 {
     print (" x is greater than y \n");
 }
-if y>x
+if (y>x)
 {
     print ("y is greater than x \n");
 }
