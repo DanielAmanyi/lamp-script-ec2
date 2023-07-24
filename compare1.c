@@ -9,11 +9,11 @@ int second_number = get_int ("insert your second number   ");
 
 if (first_number < second_number)
 {
-        printf ( "Second Number is greater than Firstnumber \n" );
+    printf ( "Second Number is greater than Firstnumber \n" );
 }
 if (first_number > second_number)
 {
-        printf ( "First Number is Greter than Second Number \n" );
+    printf ( "First Number is Greter than Second Number \n" );
 }
 else
 {
