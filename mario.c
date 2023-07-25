@@ -4,9 +4,9 @@
 int main(void)
 {
     int n = get_int ("enter array size \n");
-    for (int x = 0; n < 3; x++)
+    for (int x = 0; x < n; x++)
 {
-    for (int y = 0; n < 3; y++ )
+    for (int y = 0; y < n; y++ )
 {
 printf ( "#");
 }
