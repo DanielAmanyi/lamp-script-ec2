@@ -1,16 +1,17 @@
-#include<stdio.h>
-#include<cs50.h>
+#include <stdio.h>
+#include <cs50.h>
 
-int main (void)
+int main(void)
 {
-   const int n = get_int ("enter grid size \n");
-   for (int x=0; x < n; x++)
-    {
-    for (int y=0; y < n; y++)
-    {
-        printf ("010101");
+    int n = get_int ("enter array size \n");
+for (int x = 0; n < 3; x++)
+{
+    for (int y = 0; n < 3; y++ )
+{
+printf ( "#");
+}
 
-        }
-        printf ("\n");
-    }
+printf ( "# \n");
+}
+return 0;
 }
