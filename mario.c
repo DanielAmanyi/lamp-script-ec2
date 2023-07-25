@@ -3,7 +3,7 @@
 
 int main (void)
 {
-   const int n = 12;
+   const int n = get_int ("enter grid size \n");
    for (int x=0; x < n; x++)
     {
     for (int y=0; y < n; y++)
