@@ -12,7 +12,7 @@ int main(void)
 printf ( "x");
 }
 
-printf ( "# \n");
+printf ( " \n");
 }
 return 0;
 }
