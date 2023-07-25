@@ -2,13 +2,16 @@
 #include<stdio.h>
 
 int main (void)
+
 {
-    for (int b = 0; b <5; b++)
+    for (int g = 0; g < 3; g++)
     {
-        for (int a = 0; a <5; a++)
+        for (int f = 0; f < 3; f++)
         {
-            printf ("#");\
+            printf ("*");
         }
-    printf (" \n");
+    }
+    {
+        printf (" \n");
     }
 }
