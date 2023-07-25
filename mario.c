@@ -5,10 +5,10 @@ int main (void)
 {
     for (int b = 0; b <5; b++)
     {
-        printf (" # \n");\
-        }
         for (int a = 0; a <5; a++)
-    {
+        {
+            printf ("#");\
+        }
     printf (" \n");
     }
 }
