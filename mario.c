@@ -3,9 +3,10 @@
 
 int main (void)
 {
-    for (int x=0; x < 5; x++)
+   const int n = 12;
+   for (int x=0; x < n; x++)
     {
-    for (int y=0; y < 5; y++)
+    for (int y=0; y < n; y++)
     {
         printf ("#");
 
