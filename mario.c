@@ -4,9 +4,10 @@
 int main (void)
 
 {
-    for (int g = 0; g < 3; g++)
+    const int n = get_int ("enter grid size \n");
+    for (int g = 0; g < n; g++)
     {
-        for (int f = 0; f < 3; f++)
+        for (int f = 0; f < n; f++)
         {
             printf ("*");
         }
