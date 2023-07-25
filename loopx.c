@@ -3,10 +3,9 @@
 
 int main(void)
 {
-  for (int i = 1; i <= 5; i++) {
-    printf("%d\n", i);
-}
-
+   for (int x = 0; x<6; x++)
+    {
+        printf ("Hello \n");
     }
     return 0;
 }
