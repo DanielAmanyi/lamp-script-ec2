@@ -8,9 +8,9 @@ int main (void)
     {
     for (int y=0; y < n; y++)
     {
-        printf ("#");
+        printf ("010101");
 
         }
- printf ("\n");
+        printf ("\n");
     }
 }
