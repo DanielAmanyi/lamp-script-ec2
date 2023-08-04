@@ -1,10 +1,5 @@
+#include <cs50.h>
 #include <stdio.h>
-
-void flush_input_buffer()
-{
-    int c;
-    while ((c = getchar()) != '\n' && c != EOF);
-}
 
 int main(void)
 {
@@ -13,24 +8,21 @@ int main(void)
 
     do
     {
-        printf("Enter Starting Population: ");
-        scanf("%d", &start_size);
-        flush_input_buffer(); // Flush the input buffer
+        start_size = get_int (" Enter Starting Population \n");
     }
     while (start_size < 9);
 
     // TODO: Prompt for end size
-    int end_size;
+     int end_size;
 
     do
     {
-        printf("Enter ending Population: ");
-        scanf("%d", &end_size);
-        flush_input_buffer(); // Flush the input buffer
+        end_size = get_int (" Enter ending Population \n")
     }
     while (end_size < 9);
 
-    // Rest of your code...
-
     return 0;
+    // TODO: Calculate number of years until we reach threshold
+
+    // TODO: Print number of years
 }
