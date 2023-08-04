@@ -10,9 +10,9 @@ int main(void)
     {
         start_size = get_int (" Enter Starting Population \n");
     }
-    while (start_size < 9)
+    while (start_size < 9);
 
-    break
+
 
     // TODO: Prompt for end size
      int end_size;
@@ -21,7 +21,7 @@ int main(void)
     {
         end_size = (" Enter ending Population \n")
     }
-    while (end_size < 9)
+    while (end_size < 9);
     {
 
     // TODO: Calculate number of years until we reach threshold
