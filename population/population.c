@@ -10,7 +10,7 @@ int main(void)
     {
         start_size = get_int (" Enter Starting Population \n");
     }
-    while (start_size < 9);
+    while (start_size < 12);
 
     // TODO: Prompt for end size
 
