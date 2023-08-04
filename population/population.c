@@ -21,7 +21,7 @@ int main(void)
     }
     while (end_size < 9);
     {
-        printf(start_size + end_size\n);
+        printf(start_size + end_size \n);
 
     }
 
