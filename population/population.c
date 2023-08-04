@@ -4,6 +4,11 @@
 int main(void)
 {
     // TODO: Prompt for start size
+    int starting_population = get_int (" Enter Starting Population \n")
+    while starting_population = (< 9);
+    {
+        printf ("Enter a number greater than 9 \n")
+    }
 
     // TODO: Prompt for end size
 
