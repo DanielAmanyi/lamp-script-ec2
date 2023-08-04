@@ -22,7 +22,7 @@ int main(void)
     while (end_size < 9);
    int x = (start_size + end_size);
     {
-        printf(%i, x);
+        printf("%i", x);
 
     }
 
