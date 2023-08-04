@@ -20,14 +20,16 @@ int main(void)
         end_size = get_int (" Enter ending Population \n");
     }
     while (end_size < 9);
-   int x = (start_size + end_size);
-    {
-        printf("%i", x);
-
-    }
 
 
     // TODO: Calculate number of years until we reach threshold
+
+     int x = (start_size/3);
+     int y = (end_size/4);
+     int z = (int x + int y)
+    {
+        printf("%i", z);
+    }
 
     // TODO: Print number of years
 }
