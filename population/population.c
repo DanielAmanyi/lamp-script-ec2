@@ -19,7 +19,7 @@ int main(void)
 
     do
     {
-        end_size = (" Enter ending Population \n")
+        end_size = get_int (" Enter ending Population \n")
     }
     while (end_size < 9);
     {
