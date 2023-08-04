@@ -21,7 +21,10 @@ int main(void)
     }
     while (end_size < 9)
     {
-
+        end_size = int x
+        {
+            printf (x);
+        }
     // TODO: Calculate number of years until we reach threshold
 
     // TODO: Print number of years
