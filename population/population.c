@@ -28,7 +28,7 @@ int main(void)
      int y = (end_size/4);
      int z = x + (y-x);
     {
-        printf("%i", z);
+        printf("Years = %i \n", z);
     }
 
     // TODO: Print number of years
