@@ -4,7 +4,7 @@
 int main(void)
 {
     // TODO: Prompt for start size
-    int start_Size;
+    int start_size;
 
     do
     {
