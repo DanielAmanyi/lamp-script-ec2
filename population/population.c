@@ -1,4 +1,3 @@
-#include <cs50.h>
 #include <stdio.h>
 
 void flush_input_buffer()
@@ -14,7 +13,8 @@ int main(void)
 
     do
     {
-        start_size = get_int("Enter Starting Population: ");
+        printf("Enter Starting Population: ");
+        scanf("%d", &start_size);
         flush_input_buffer(); // Flush the input buffer
     }
     while (start_size < 9);
@@ -24,7 +24,8 @@ int main(void)
 
     do
     {
-        end_size = get_int("Enter ending Population: ");
+        printf("Enter ending Population: ");
+        scanf("%d", &end_size);
         flush_input_buffer(); // Flush the input buffer
     }
     while (end_size < 9);
