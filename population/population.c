@@ -4,14 +4,23 @@
 int main(void)
 {
     // TODO: Prompt for start size
-    int starting_population = get_int (" Enter Starting Population \n");
+    int start_Size;
 
-    if (starting_population < 9)
+    do
     {
-        printf ("Enter a number greater than 9 \n");
+        start_size = get_int (" Enter Starting Population \n");
     }
+    while (start_size < 9)
 
     // TODO: Prompt for end size
+     int end_size;
+
+    do
+    {
+        end_size = (" Enter ending Population \n")
+    }
+    while (end_size < 9)
+    {
 
     // TODO: Calculate number of years until we reach threshold
 
