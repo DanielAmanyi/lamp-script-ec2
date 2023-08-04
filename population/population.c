@@ -26,7 +26,7 @@ int main(void)
 
      int x = (start_size/3);
      int y = (end_size/4);
-     int z = (x + y);
+     int z = x + (y-x);
     {
         printf("%i", z);
     }
