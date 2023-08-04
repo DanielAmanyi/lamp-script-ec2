@@ -20,8 +20,9 @@ int main(void)
         end_size = get_int (" Enter ending Population \n");
     }
     while (end_size < 9);
+   int x = (start_size + end_size);
     {
-        printf(start_size + end_size \n);
+        printf(%i, x);
 
     }
 
