@@ -8,8 +8,11 @@ int main(void)
         printf ("Hello \n");
     }
 
-    int y = get_int ("How many Tualey do you want to see ? \n");
+    int n = get_int ("How many Tualey do you want to see ? \n");
 
-    for (int y = 0; 
+    for (int y = 0; y < n; y++);
+    {
+        printf("Tualey \n");
+    }
 }
 
