@@ -7,6 +7,9 @@ int main(void)
     {
         printf ("Hello \n");
     }
-    return 0;
+
+    int y = get_int ("How many Tualey do you want to see ? \n");
+
+    for (int y = 0; 
 }
 
