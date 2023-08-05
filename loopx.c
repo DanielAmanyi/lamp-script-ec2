@@ -13,6 +13,11 @@ int main(void)
 
     int n = grid_size();
 
+    // get grid size
+
+    {
+        int get_size(void)
+    }
     do
     {
 
