@@ -7,7 +7,9 @@ int main(void)
     {
         printf ("Hello \n");
     }
-
+    {
+    int n;
+    }
     do
     {
 
