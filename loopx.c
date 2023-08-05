@@ -1,25 +1,14 @@
 #include<cs50.h>
 #include<stdio.h>
 
-int get_size(void);
-
 int main(void)
 {
-    int n;
-
+       int n;
     for (int x = 0; x<6; x++)
     {
         printf ("Hello \n");
     }
 
-
-    n = get_size();
-
-    // get grid size
-
-    {
-        get_size(void)
-    }
     do
     {
 
@@ -32,7 +21,5 @@ int main(void)
     {
         printf("Tualey \n");
     }
-
-    return n;
 }
 
