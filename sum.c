@@ -47,7 +47,7 @@ void sum()
 
 
     int main(void)
-    
+
     {
         sum();
     }
