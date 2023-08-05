@@ -1,6 +1,8 @@
 #include<cs50.h>
 #include<stdio.h>
 
+int n = grid_size();
+
 int main(void)
 {
     int n;
