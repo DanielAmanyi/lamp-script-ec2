@@ -8,7 +8,13 @@ int main(void)
         printf ("Hello \n");
     }
 
+    do
+    {
+
     int n = get_int ("How many Tualey do you want to see ? \n");
+
+    }
+    while (n >= 0);
 
     for (int y = 0; y < n; y++)
     {
