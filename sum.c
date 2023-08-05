@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<cs50.h>
 
-int main(void);;
-{
 
-void sum();
+void sum()
 
-}
+int main(void)
+
+
+
 
 {
     int a = get_int("Enter First number \n");
