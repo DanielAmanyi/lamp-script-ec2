@@ -11,7 +11,7 @@ int main(void)
     }
 
 
-    int grid();
+    int grid_size();
 
     do
     {
