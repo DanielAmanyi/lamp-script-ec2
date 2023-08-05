@@ -4,7 +4,7 @@
 int main(void)
 
 
-void sum();
+int void sum ()
 
 {
     int a = get_int("Enter First number \n");
