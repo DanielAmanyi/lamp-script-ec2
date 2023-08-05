@@ -13,7 +13,7 @@ int main(void)
     }
 
 
-    n = grid_size();
+    n = get_size();
 
     // get grid size
 
