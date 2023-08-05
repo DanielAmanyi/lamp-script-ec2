@@ -11,7 +11,7 @@ int main(void)
     }
 
 
-    int grid_size();
+    int n = grid_size();
 
     do
     {
@@ -26,6 +26,6 @@ int main(void)
         printf("Tualey \n");
     }
 
-    return (grid);
+    return n;
 }
 
