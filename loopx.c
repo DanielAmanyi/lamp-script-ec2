@@ -3,12 +3,12 @@
 
 int main(void)
 {
+    int n;
+
     for (int x = 0; x<6; x++)
     {
         printf ("Hello \n");
     }
-
-    int n;
 
     do
     {
