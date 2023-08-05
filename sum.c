@@ -3,9 +3,9 @@
 
 int main(void)
 
-{
+
 void sum();
-}
+
 {
     int a = get_int("Enter First number \n");
     int b = get_int ("enter Second Number \n");
