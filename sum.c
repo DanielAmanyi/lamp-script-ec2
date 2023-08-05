@@ -2,9 +2,11 @@
 #include<cs50.h>
 
 int main(void);;
-
+{
 
 void sum();
+
+}
 
 {
     int a = get_int("Enter First number \n");
