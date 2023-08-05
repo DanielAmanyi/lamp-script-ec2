@@ -3,18 +3,21 @@
 
 
 void sum()
-
-int main(void)
-
-
-
-
 {
     int a = get_int("Enter First number \n");
     int b = get_int ("enter Second Number \n");
     int sum = (a+b);
 
-    {
+
         printf("The Sum is: %d \n", sum);
+ }
+
+
+    int main(void)
+    {
+        sum();
     }
+
+
+
 }
