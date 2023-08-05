@@ -11,8 +11,7 @@ int main(void)
     }
 
 
-    
-
+    int grid();
 
     do
     {
@@ -26,5 +25,7 @@ int main(void)
     {
         printf("Tualey \n");
     }
+
+    return (grid);
 }
 
