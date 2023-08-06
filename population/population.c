@@ -5,11 +5,11 @@ int main(void)
 {
     // TODO: Prompt for start size
 
-    int start;
+    int starter;
 
-    while (start > 9)
+    while (starter > 9)
     {
-    start = get_int("Enter Start: \n");
+    starter = get_int("Enter Start: \n");
     }
 
     // TODO: Prompt for end size
