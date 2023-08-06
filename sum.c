@@ -1,6 +1,9 @@
 #include<cs50.h>
 #include<stdio.h>
-int sum(void)
+
+
+int sum(void);
+
 int main (void)
 {
 sum;
