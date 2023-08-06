@@ -23,7 +23,7 @@ int main(void)
     // TODO: Calculate number of years until we reach threshold
 
     int c = 0;
-    
+    while (start<end)
     {
         start = start + (start/4 - start/3 );
         c++;
@@ -32,6 +32,6 @@ int main(void)
 
     // TODO: Print number of years
     {
-        printf("Years: %i \n", c);
+        printf("Years: %i \n", start);
     }
 }
