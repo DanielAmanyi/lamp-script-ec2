@@ -9,18 +9,19 @@ int main(void)
 
     while (start > 9);
 
-    int start = get_int("Enter Start: \n");
+    start = get_int("Enter Start: \n");
 
     // TODO: Prompt for end size
+    int end;
     while (end > 9);
-    
-    int end = get_int("enter End: \n");
+
+    end = get_int("enter End: \n");
 
     // TODO: Calculate number of years until we reach threshold
 
-    int a = start/3
-    int b = end/4
-    int c = b - a
+    int a = (start/3);
+    int b = (end/4);
+    int c = (b - a);
 
     // TODO: Print number of years
 }
