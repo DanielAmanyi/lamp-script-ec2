@@ -5,7 +5,9 @@
 int sumx ()
 
 {
-    while (true)
+
+    int x = 0;
+    while (x >=3)
     {
         printf ("Enter your name \n");
     }
