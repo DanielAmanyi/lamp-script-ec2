@@ -9,9 +9,23 @@ int main (void)
     printf("The Sum is: \n" );
 }
 
-{
-sumx();
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {
     a = get_int ("Enter First Number: \n");
