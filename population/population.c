@@ -19,13 +19,13 @@ int main(void)
     {
     end = get_int("enter End: \n");
     }
-    while (end <start);
+
     // TODO: Calculate number of years until we reach threshold
 
-    int c = (end/4 - start/3 );
-
-    int growth;
-    growth = (start + c);
+    int c = 0;
+    while (end <start);
+        c = (start/4 - start/3 );
+        c++;
 
     // TODO: Print number of years
     {
