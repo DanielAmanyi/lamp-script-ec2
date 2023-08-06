@@ -23,7 +23,7 @@ int main(void)
     // TODO: Calculate number of years until we reach threshold
 
     int c = 0;
-        c = (start/4 - start/3 );
+        start = start + (start/4 - start/3 );
         c++;
 
     // TODO: Print number of years
