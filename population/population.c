@@ -7,11 +7,11 @@ int main(void)
 
     int start=0;
 
-    while (start > 9)
+
     {
     start = get_int("Enter Start: \n");
     }
-    return start;
+    
     // TODO: Prompt for end size
 
     int end =0;
