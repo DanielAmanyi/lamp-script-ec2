@@ -7,8 +7,10 @@ int sumx (void);
 int main (void)
 {
     printf("The Sum is: \n" );
+}
 
-sumx;
+{
+sumx();
 }
 
 {
@@ -16,5 +18,6 @@ sumx;
     b = get_int ("Enter Second Number: \n");
 
     sumx(int a + int b)
-}
 return sumx;
+
+}
