@@ -6,12 +6,12 @@ int sumx ()
 
 {
 
-    int x = 0;
-    while (x < 3)
+    int x;
+    do
     {
        int y = get_int ("Enter your age \n");
-        x++;
     }
+while (x < 14 );
 
     int a = get_int ("Enter First Number: \n");
    int  b = get_int ("Enter Second Number: \n");
