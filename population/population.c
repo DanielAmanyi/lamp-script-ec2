@@ -22,9 +22,10 @@ int main(void)
     while (end <9);
     // TODO: Calculate number of years until we reach threshold
 
-    int a = (start/3);
-    int b = (end/4);
-    int c = (b - a);
+    int c = (end/4 - start/3 );
 
     // TODO: Print number of years
+    {
+        printf("%i \n", c);
+    }
 }
