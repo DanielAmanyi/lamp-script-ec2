@@ -24,8 +24,11 @@ int main(void)
 
     int c = (end/4 - start/3 );
 
+    int growth;
+    growth = (start + c);
+
     // TODO: Print number of years
     {
-        printf("%i \n", c);
+        printf("%i \n", growth);
     }
 }
