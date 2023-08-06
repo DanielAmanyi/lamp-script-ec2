@@ -4,9 +4,9 @@
 int main(void)
 {
        int n;
-    for (int x = 0; x<6; x++)
+    for (int x = 1; x<20; x= x+ 2)
     {
-        printf ("Hello \n");
+        printf (" %i\n", x);
     }
 
     do
