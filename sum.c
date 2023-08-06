@@ -7,10 +7,10 @@ int sumx ()
 {
 
     int x = 0;
-    while (x >=3)
+    while (x < 3)
     {
-       str y = get_str("Enter your name \n");
-        x--;
+       int y = get_int ("Enter your age \n");
+        x++;
     }
 
     int a = get_int ("Enter First Number: \n");
