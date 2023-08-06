@@ -9,7 +9,7 @@ int sumx ()
     int x = 0;
     while (x >=3)
     {
-        printf ("Enter your name \n");
+       str y = get_str("Enter your name \n");
         x--;
     }
 
