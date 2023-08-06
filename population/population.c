@@ -25,13 +25,13 @@ int main(void)
     int c = 0;
     while (start<end)
     {
-        start = start + (start/4 - start/3 );
+        start = start + (start/3 - start/4 );
         c++;
 
         }
 
     // TODO: Print number of years
     {
-        printf("Years: %i \n", start);
+        printf("Years: %i \n", c);
     }
 }
