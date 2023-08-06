@@ -12,6 +12,6 @@ int main(void)
 
     // Say hello
     {
-        printf("Hello, %i, from %i!", name, location);
+        printf("Hello, %s, from %s!", name, location);
     }
 }
