@@ -6,9 +6,9 @@ int sumx (void);
 
 int main (void)
 {
-    printf("The Sum is: )
+    printf("The Sum is: \n" );
 
-sum;
+sumx;
 }
 
 {
