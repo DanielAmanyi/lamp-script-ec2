@@ -6,20 +6,20 @@ int main(void)
     // TODO: Prompt for start size
 
     int start=0;
-
-
+    do
     {
     start = get_int("Enter Start: \n");
     }
-    
+    while (start < 9);
+
     // TODO: Prompt for end size
 
     int end =0;
-    while (end > 9)
+    do
     {
     end = get_int("enter End: \n");
     }
-    return end;
+    while (end <9);
     // TODO: Calculate number of years until we reach threshold
 
     int a = (start/3);
