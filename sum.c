@@ -5,10 +5,11 @@
 int sumx ()
 
 {
-    do
-    {printf("Enter your name \n")
+    while (true)
+    {
+        printf ("Enter your name \n");
     }
-    while
+
     int a = get_int ("Enter First Number: \n");
    int  b = get_int ("Enter Second Number: \n");
 
