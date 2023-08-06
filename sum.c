@@ -2,36 +2,58 @@
 #include<stdio.h>
 
 
-int sumx (void)
-
-int main (void)
-{
-    printf("The Sum is: \n" );
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+int sumx ()
 
 {
-    a = get_int ("Enter First Number: \n");
-    b = get_int ("Enter Second Number: \n");
+    int a = get_int ("Enter First Number: \n");
+   int  b = get_int ("Enter Second Number: \n");
 
-    sumx(int a + int b)
+   int sumx = (a + b);
+   
 return sumx;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int main (void)
+{
+    sumx();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
