@@ -2,11 +2,12 @@
 #include<stdio.h>
 
 
-int sum(void);
+void sum();
 
 int main (void)
 {
-sum;
+    printf("The Sum is: %i\n", sum)
+int sum;
 }
 
 {
