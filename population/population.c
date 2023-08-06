@@ -7,15 +7,21 @@ int main(void)
 
     int start;
 
-    while (start > 9);
+    while (start > 9)
+    {
 
     start = get_int("Enter Start: \n");
+    }
 
     // TODO: Prompt for end size
+
     int end;
-    while (end > 9);
+    while (end > 9)
+    {
 
     end = get_int("enter End: \n");
+
+    }
 
     // TODO: Calculate number of years until we reach threshold
 
