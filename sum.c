@@ -10,7 +10,7 @@ void sum()
 
 
         printf("The Sum is: %d \n", sum);
- }
+}
 
 
 
