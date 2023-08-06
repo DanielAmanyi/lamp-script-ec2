@@ -9,7 +9,6 @@ int main(void)
 
     while (start > 9)
     {
-
     start = get_int("Enter Start: \n");
     }
 
