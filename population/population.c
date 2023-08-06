@@ -5,7 +5,7 @@ int main(void)
 {
     // TODO: Prompt for start size
 
-    int start=0;
+    int start;
     do
     {
     start = get_int("Enter Start: \n");
@@ -14,7 +14,7 @@ int main(void)
 
     // TODO: Prompt for end size
 
-    int end =0;
+    int end;
     do
     {
     end = get_int("enter End: \n");
