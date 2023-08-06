@@ -1,8 +1,7 @@
 // Become familiar wih C syntax
 // Learn to debug buggy code
-#include<stdio.h>
 #include <cs50.h>
-
+#include<stdio.h>
 int main(void)
 {
     // Ask for your name and where live
