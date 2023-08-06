@@ -1,11 +1,16 @@
 #include <cs50.h>
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main(void)
-
 {
-    string input_last_name = get_string ("what is your Last name?  ");
-    string input_first_name = get_string ("what is your First name?  ");
-    printf ("Hello, and welcome %s %s\n", input_last_name, input_first_name);
-
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
 }
