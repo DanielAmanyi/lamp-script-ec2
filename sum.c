@@ -1,53 +1,15 @@
-#include<stdio.h>
 #include<cs50.h>
-
-
-void sum()
+#include<stdio.h>
+int sum(void)
+int main (void)
 {
-    int a = get_int("Enter First number \n");
-    int b = get_int ("enter Second Number \n");
-    int sum = (a+b);
-
-
-        printf("The Sum is: %d \n", sum);
+sum;
 }
 
+{
+    a = get_int ("Enter First Number: \n");
+    b = get_int ("Enter Second Number: \n");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    int main(void)
-
-    {
-        sum();
-    }
+    sum(int a + int b)
+}
+return sum;
