@@ -10,6 +10,7 @@ int sumx ()
     while (x >=3)
     {
         printf ("Enter your name \n");
+        x--;
     }
 
     int a = get_int ("Enter First Number: \n");
