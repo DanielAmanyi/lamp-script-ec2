@@ -13,5 +13,13 @@ int main(void)
             printf("#");
         }
         printf("\n");
+        break;
     }
+
+    int y = get_int ("How many Stars do you want to see? \n");
+   for (int x=0; y<=y; x++)
+   {
+    printf("*");
+   }
+   return 0;
 }
