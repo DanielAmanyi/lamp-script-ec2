@@ -17,7 +17,7 @@ int main(void)
     }
     int x;
     int y = get_int ("How many Stars do you want to see? \n");
-   for (x=0; x<=y; x++)
+   for (x=0; x<y; x++)
    {
     printf("*");
    }
