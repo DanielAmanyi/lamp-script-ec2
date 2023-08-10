@@ -13,8 +13,7 @@ int main(void)
             printf("#");
         }
         printf("\n");
-
-        break;
+    }
     }
 
     int y = get_int ("How many Stars do you want to see? \n");
