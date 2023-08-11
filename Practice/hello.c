@@ -1,8 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
 
-#include <stdio.h>
-
 int main(void)
 {
    int n = get_int ("How many array grid do you want to see? \n");
@@ -14,13 +12,12 @@ int main(void)
         }
         printf("\n");
     }
-    }
-    int x;
-    int y = get_int ( "How many Stars do you want to see? \n")
 
-   for (x=0; x<=y; x++)
+    int a = get_int ( "How many Stars do you want to see? \n");
+
+   for (int x=0; x<=a; x++)
    {
-    printf("*\n");
+    printf("*");
    }
    return 0;
 }
