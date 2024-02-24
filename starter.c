@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(void)
+
 {
-    printf("Hello Super \n");
+    printf("Hello Super \n") ;
 }
