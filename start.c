@@ -1,13 +1,18 @@
 #include<stdio.h>
+#include<cs50.h>
 
 int main(void)
 {
-    for (int i = 0; i<3; i++)
+int n = get_int ("enter your desired matrix size");
 
-        for (int j = 0; j<3; j++)
+
+    for (int i = 0; n<3; i++)
+
+        {for (int j = 0; n<3; j++)
         {
-            printf("#\n");
+            printf("#  ");
         }
-    printf("# \n");
-    return 0;
+        printf("\n");
+        }
+
 }
