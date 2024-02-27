@@ -3,8 +3,9 @@
 
 int main(void)
 {
-int n = get_int ("enter your desired matrix size");
 
+int n = get_int ("enter your desired matrix size \n");
+while (n<0)
 
     for (int i = 0; i<n; i++)
 
