@@ -6,9 +6,9 @@ int main(void)
 int n = get_int ("enter your desired matrix size");
 
 
-    for (int i = 0; n<3; i++)
+    for (int i = 0; i<n; i++)
 
-        {for (int j = 0; n<3; j++)
+        {for (int j = 0; j<n; j++)
         {
             printf("#  ");
         }
