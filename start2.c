@@ -11,7 +11,7 @@ for (int i = 0; i < a; i++)
     {
     printf("x");
     }
-    printf("\n");
+    // printf("\n");
 }
 }
 
