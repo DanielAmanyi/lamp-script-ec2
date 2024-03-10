@@ -9,9 +9,11 @@ for (int i = 0; i < a; i++)
 {
     // for (int j = 0; j<a; j++)
     {
-    printf("x");
+        for (int k = 0, k<a; k++)
+    {
+        printf("x");
     }
     // printf("\n");
 }
 }
-
+}
