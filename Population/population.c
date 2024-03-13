@@ -9,7 +9,7 @@ int start = get_int("Enter Start Size \n");
 
     // TODO: Prompt for end size
 
-// int end = get_int("Stop Size \n");
+int end = get_int("Stop Size \n");
 
     // TODO: Calculate number of years until we reach threshold
     double start_years, end_years;
