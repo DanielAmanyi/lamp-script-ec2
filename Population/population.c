@@ -12,12 +12,12 @@ int start = get_int("Enter Start Size \n");
 int end = get_int("Stop Size \n");
 
     // TODO: Calculate number of years until we reach threshold
-    doubl years;
+    double years;
 
-    years = start * (1/3) + end *(1/4);
+    years = start/3 + end/4;
 
     // TODO: Print number of years
-    printf(" Lamas left would be %i \n", years);
+    printf(" Lamas left would be %lf \n", years);
 
 
 
