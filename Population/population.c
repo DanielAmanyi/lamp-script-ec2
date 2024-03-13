@@ -12,7 +12,8 @@ int start = get_int("Enter Start Size \n");
 int end = get_int("Stop Size \n");
 
     // TODO: Calculate number of years until we reach threshold
-    double start_years, end_years, Total_lamas;
+    double start_years, end_years;
+    int Total_lamas;
 
     start_years = start/3;
     end_years = end/4;
