@@ -1,14 +1,23 @@
 #include<stdio.h>
 #include<cs50.h>
 
-int main(void) {  // TODO: Prompt for start size
-get_int = ("Enter Start Size \n")
+int main(void) {
+
+    // TODO: Prompt for start size
+
+int start = get_int("Enter Start Size \n");
+
     // TODO: Prompt for end size
-    get_int = ("Stop Size\n")
+
+int end = get_int("Stop Size \n");
 
     // TODO: Calculate number of years until we reach threshold
+    int years;
+
+    years = start * (1/3) + (1/4);
 
     // TODO: Print number of years
+    printf(" Lamas left would be %i \n", years);
 
 
 
