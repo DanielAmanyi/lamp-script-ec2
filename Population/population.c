@@ -14,14 +14,15 @@ int start = get_int("Enter Start Size \n");
     // TODO: Calculate number of years until we reach threshold
     double start_years, end_years;
     int Total_lamas;
+    int years;
 
     start_years = start/3;
     end_years = start/4;
     Total_lamas = end_years - start_years;
-    start_lamas+
+    years = start+Total_lamas;
 
     // TODO: Print number of years
-    printf(" Lamas left would be %lf \n", Total_lamas);
+    printf(" Lamas left would be %i \n", years);
 
 
 
