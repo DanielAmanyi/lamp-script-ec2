@@ -3,6 +3,7 @@
 
 int main(void){
 int height;
+count = 5
 
 do{
 height = get_int("Enter Pyramid Height  \n");
