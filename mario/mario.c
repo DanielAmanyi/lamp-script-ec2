@@ -16,7 +16,7 @@ height = get_int("Enter Pyramid Height  \n");
 
 
 }
-while (height <1 || height >8 ||count <5);
+while ((height <1 || height >8) && count <5);
 
 
 
