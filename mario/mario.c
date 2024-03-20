@@ -3,17 +3,20 @@
 
 int main(void){
 int height;
-int count;
+int count = 0;
 
-if count
+
 do{
+    if (count == 4){
+     printf("You have one more try \n");
+    }
 height = get_int("Enter Pyramid Height  \n");
 
 
 
 
 }
-while (height <1 || height >8);
+while (height <1 || height >8 ||count <5);
 
 
 
