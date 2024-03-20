@@ -17,7 +17,7 @@ int end = get_int("Stop Size \n");
     int years;
 
     start_years = start/3;
-    end_years = start/4;
+    end_years = startls/4;
     Total_lamas = end_years - start_years;
     years = start+Total_lamas;
 
