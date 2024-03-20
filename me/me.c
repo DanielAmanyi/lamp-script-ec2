@@ -6,7 +6,7 @@ int main(void){
 // char name[25];
 
 
-get_stringname("Whats your name? \n");
+string name = get_string("Whats your name? \n");
 
 
 // printf("Hello, What's your name ? \n");
