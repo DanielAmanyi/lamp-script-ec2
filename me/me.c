@@ -1,13 +1,13 @@
 #include<stdio.h>
 
 int main(void){
-string name;
+char name[25];
 
-printf("Hello What's your name ? \n");
+printf("Hello, What's your name ? \n");
 scanf("%s25", name);
 
 
-printf("Hello, %s", name);
+printf("Hello, %s \n", name);
 
 
     return 0;
