@@ -23,24 +23,16 @@ while ((height <1 || height >8) && count <5);
 int i;
 for (i = 0; i <height; i++)
 {
-printf("#");
 printf("\n");
+{
+
+int j;
+    for (j=0; j<height; j++)
+printf("x");
+}
 }
 
-
-//   {
-//     int j;
-//     for (j=0; j<height; j++)
-
-// }
-
-
-
-
-
-
-
-
+printf("\n");
 
 
     return 0;
