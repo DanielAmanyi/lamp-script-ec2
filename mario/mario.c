@@ -29,9 +29,7 @@ int j;
     for (j=0; j<height; j++)
 printf("x");
 }
-
-
-printf("\n");
+printf(" \n");
 
 
     return 0;
