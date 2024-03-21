@@ -21,15 +21,18 @@ while ((height <1 || height >8) && count <5);
 
 
 int i;
-for (i = 0; i <4; i++)
+for (i = 0; i <height; i++)
 {
-printf(" #");
+printf("#");
+printf("\n");
 }
-  {
-    int j;
-    for (j=0; j<4; j++)
-    printf("\n");
-}
+
+
+//   {
+//     int j;
+//     for (j=0; j<height; j++)
+
+// }
 
 
 
