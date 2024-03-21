@@ -24,11 +24,11 @@ int main(void)
         {
             printf(" ");
         }
-        // for (int k = 0; k <= i; k++)
-        // {
-        //     printf("x");
-        // }
-        // printf("\n");
+        for (int k = 0; k <= i; k++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
 
     return 0;
