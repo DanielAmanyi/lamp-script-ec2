@@ -24,12 +24,12 @@ int i;
 for (i = 0; i <height; i++)
 {
 printf("\n");
-{
+
 int j;
     for (j=0; j<height; j++)
 printf("x");
 }
-}
+
 
 printf("\n");
 
