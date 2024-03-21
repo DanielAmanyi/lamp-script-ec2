@@ -20,9 +20,9 @@ count++;
 while ((height <1 || height >8) && count <5);
 
 
-
-
-
+int i;
+for (i = 0; i <4; i++);
+printf(" # \n");
 
 
 
