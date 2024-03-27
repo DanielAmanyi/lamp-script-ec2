@@ -1,17 +1,17 @@
-#include<cs50.io>
+#include<cs50.h>
 #include<stdio.h>
 
 int main(void){
 
-string name = get_string("Enter name: \n")
-int n = 0
+string name = get_string("Enter name: \n");
+int n = 0;
 
 while (name[n]! = '0\')
 {
     n++
 }
 
-printf(name[n])
+printf("%i\n", n);
 
     return 0;
 }
