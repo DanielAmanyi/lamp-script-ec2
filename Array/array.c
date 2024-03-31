@@ -4,8 +4,8 @@
 
 int main (void)
 {
-
-int scores = get_int("enter score \n");
+int scores;
+// int scores = get_int("enter score \n");
 
 scores[3];
 scores[0] = 77
