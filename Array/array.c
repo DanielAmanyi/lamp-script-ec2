@@ -4,14 +4,14 @@
 
 int main (void)
 {
-
+int n;
 // int scores = get_int("enter score \n");
 
 int scores[3];
 // scores[0] = get_int("Score1: \n");
 // scores[1] = get_int("Score2: \n");
 // scores[2] = get_int("Score3: \n");
-for (int i=0; i<n; i++);
+for (int i=0; i<n; i++)
 {
     scores[n] = get_int("enter score \n");
 }
