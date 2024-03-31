@@ -14,7 +14,7 @@ scores[2] =79;
 
 
 {
-    printf("%d \n", scores[1]+scores[2]+scores[3]);
+    printf("%d \n", (scores[1]+scores[2]+scores[3]));
 }
 
 
