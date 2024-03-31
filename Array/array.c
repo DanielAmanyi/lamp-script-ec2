@@ -4,17 +4,17 @@
 
 int main (void)
 {
-int scores;
+
 // int scores = get_int("enter score \n");
 
-scores[3];
-scores[0] = 77
-scores[1] =78
-scores[2] =79
+int scores[3];
+scores[0] = 77;
+scores[1] =78;
+scores[2] =79;
 
 
 {
-    printf("%f \n", scores);
+    printf("%d \n", scores[1]+scores[2]+scores[3]);
 }
 
 
