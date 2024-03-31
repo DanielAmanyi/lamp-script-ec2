@@ -13,6 +13,7 @@ int main (void)
 int n=3;
 for (int i=0; i<n; i++)
 {
+    int scores[3];
    scores = get_int("enter score \n");
 }
 
