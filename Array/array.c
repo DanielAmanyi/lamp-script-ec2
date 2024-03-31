@@ -17,7 +17,7 @@ for (int i=0; i<n; i++)
 }
 
 {
-    printf("Average Equals:  %d \n", (scores[1] + scores[0] + scores[2] )/n);
+    printf("Average Equals:  %i \n", (scores[1] + scores[0] + scores[2] )/n);
 }
 
 
