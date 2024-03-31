@@ -13,7 +13,7 @@ int scores[3];
 int n=3;
 for (int i=0; i<n; i++)
 {
-   scores = get_int("enter score \n");
+   scores[i] = get_int("enter score \n");
 }
 
 {
