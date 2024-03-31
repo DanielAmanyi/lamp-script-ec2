@@ -8,13 +8,16 @@ int main (void)
 // int scores = get_int("enter score \n");
 
 int scores[3];
-for (int i=0; i<3; i++);
-{
-    scores = get_int("enter score \n");
-}
+scores[0] = get_int("Score1: \n");
+scores[1] = get_int("Score2: \n");
+scores[2] = get_int("Score3: \n");
+// for (int i=0; i<3; i++);
+// {
+//     scores[] = get_int("enter score \n");
+// }
 
 {
-    printf("%d \n", (scores[1] + scores[0] + scores[2] )/3);
+    printf("Average Equals:  %d \n", (scores[1] + scores[0] + scores[2] )/3);
 }
 
 
