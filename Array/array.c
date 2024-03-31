@@ -8,8 +8,7 @@ int main (void)
 // int scores = get_int("enter score \n");
 
 int scores[3];
-for (int i=0; i<3; i++)
-
+for (int i=0; i<3; i++);
 {
     scores = get_int("enter score \n");
 }
