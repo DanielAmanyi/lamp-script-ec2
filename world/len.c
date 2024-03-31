@@ -8,7 +8,7 @@ int n = 0;
 
 while (name[n] ! = '\0');
 {
-    n++
+    n++;
 }
 
 printf("%i\n", n);
