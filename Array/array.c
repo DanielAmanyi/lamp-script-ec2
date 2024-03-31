@@ -8,10 +8,11 @@ int main (void)
 // int scores = get_int("enter score \n");
 
 int scores[3];
-scores[0] = 77;
-scores[1] =78;
-scores[2] =79;
+for (int i=0; i<3; i++)
 
+{
+scores = get_int("enter score \n");
+}
 
 {
     printf("%d \n", (scores[1] + scores[0] + scores[2] )/3);
