@@ -51,7 +51,7 @@ void cipher_text(string plaintext, int key)
             printf("%c", ((plaintext[i] - 'a' + key) % 26) + 'a');
         }
 
-        if (plaintext[i] >= 'A' && plaintext[i] <= 'Z')
+        else if (plaintext[i] >= 'A' && plaintext[i] <= 'Z')
         {
             printf("%c", ((plaintext[i] - 'A' + key) % 26) + 'A');
         }
