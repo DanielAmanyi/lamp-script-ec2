@@ -8,58 +8,51 @@ void cipher_text(string plaintext, int key);
 
 int main(int argc, string argv[])
 {
-    if (argc == 2)
-    {
-        //check if argv[1] is a positive digit
-        for (int i = 0; i < strlen(argv[1]); i++)
-        {
-            if (isdigit(argv[1][i]) == false)
-            {
-                printf("Usage: ./caesar key\n");
-                return 1;
-            }
-        }
-
-        //convert argv[1] to a int
-        int key = atoi(argv[1]);
-
-        printf("Success\n" "%d\n", key);
-
-        string plaintext = get_string("Plaintext: ");
-
-        printf("ciphertext: ");
-
-        //encipher
-        //output ciphertext
-        cipher_text(plaintext, key);
-    }
-    else
+    if (argc != 2)
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
 
+    for (int i = 0; i < strlen(argv[1]); i++)
+    {
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+    }
+
+    int key = atoi(argv[1]);
+
+    printf("Success\n%d\n", key);
+
+    string plaintext = get_string("Plaintext: ");
+
+    printf("Ciphertext: ");
+
+    cipher_text(plaintext, key);
+
     printf("\n");
+
+    return 0;
 }
 
 void cipher_text(string plaintext, int key)
 {
     for (int i = 0; i < strlen(plaintext); i++)
     {
-        if (plaintext[i] >= 'a' && plaintext[i] <= 'z')
+        if (islower(plaintext[i]))
         {
-            printf("%c", ((plaintext[i] - 'a' + key) % 26) + 'a');
+            printf("%c", 'a' + (plaintext[i] - 'a' + key) % 26);
         }
-
-        else if (plaintext[i] >= 'A' && plaintext[i] <= 'Z')
+        else if (isupper(plaintext[i]))
         {
-            printf("%c", ((plaintext[i] - 'A' + key) % 26) + 'A');
+            printf("%c", 'A' + (plaintext[i] - 'A' + key) % 26);
         }
-
-        else if (isalpha(plaintext[i]) == false)
+        else
         {
             printf("%c", plaintext[i]);
         }
-
     }
 }
