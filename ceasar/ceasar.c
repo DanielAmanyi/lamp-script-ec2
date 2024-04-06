@@ -30,7 +30,7 @@ int main(int argc, string argv[])
     int key = atoi(argv[1]);
 
     // Print the key for verification
-    printf("Success\n%d\n", key);
+    printf("Success\n%d \n", key);
 
     // Get the plaintext from the user
     string plaintext = get_string("Plaintext: ");
