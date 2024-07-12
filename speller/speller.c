@@ -187,4 +187,5 @@ double calculate(const struct rusage *b, const struct rusage *a)
     }
     else
     {
-        return ((((a->ru_utime.tv_sec * 100
+        return ((((a->ru_utime.tv_sec * 100;
+    }
