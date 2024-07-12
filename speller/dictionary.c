@@ -1,27 +1,29 @@
-#include <ctype.h>
+// dictionary.c
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 #include "dictionary.h"
 
-// Represents a node in a hash table
+// Define the size of the hash table
+#define HASHTABLE_SIZE 65536
+
+// Define the maximum length for a word
+#define LENGTH 45
+
+// Node structure for linked list
 typedef struct node
 {
     char word[LENGTH + 1];
     struct node *next;
 } node;
 
-// Choose number of buckets in hash table
-const unsigned int N = 65536;
-
 // Hash table
-node *table[N];
+node *hashtable[HASHTABLE_SIZE];
 
-// Number of words in dictionary
-unsigned int word_count = 0;
-
-// Hashes word to a number using djb2 algorithm
+// Hash function (djb2)
 unsigned int hash(const char *word)
 {
     unsigned long hash = 5381;
@@ -29,30 +31,77 @@ unsigned int hash(const char *word)
 
     while ((c = *word++))
     {
-        hash = ((hash << 5) + hash) + tolower(c);
+        hash = ((hash << 5) + hash) + tolower(c); // hash * 33 + c
     }
 
-    return hash % N;
+    return hash % HASHTABLE_SIZE;
+}
+
+// Number of words in dictionary
+unsigned int word_count = 0;
+
+// Loads dictionary into memory, returning true if successful, else false
+bool load(const char *dictionary)
+{
+    // Open dictionary file
+    FILE *file = fopen(dictionary, "r");
+    if (file == NULL)
+    {
+        return false;
+    }
+
+    // Buffer for a word
+    char word[LENGTH + 1];
+
+    // Read words from the dictionary file
+    while (fscanf(file, "%45s", word) != EOF)
+    {
+        // Create a new node
+        node *new_node = malloc(sizeof(node));
+        if (new_node == NULL)
+        {
+            return false;
+        }
+        strcpy(new_node->word, word);
+        new_node->next = NULL;
+
+        // Hash the word to obtain a hash value
+        unsigned int index = hash(word);
+
+        // Insert the node into the hash table
+        if (hashtable[index] == NULL)
+        {
+            hashtable[index] = new_node;
+        }
+        else
+        {
+            new_node->next = hashtable[index];
+            hashtable[index] = new_node;
+        }
+
+        // Increment word count
+        word_count++;
+    }
+
+    // Close the dictionary file
+    fclose(file);
+
+    return true;
 }
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
-    char lower_word[LENGTH + 1];
-    int len = strlen(word);
+    // Hash the word to obtain a hash value
+    unsigned int index = hash(word);
 
-    for (int i = 0; i < len; i++)
-    {
-        lower_word[i] = tolower(word[i]);
-    }
-    lower_word[len] = '\0';
+    // Access linked list at that index
+    node *cursor = hashtable[index];
 
-    unsigned int index = hash(lower_word);
-    node *cursor = table[index];
-
+    // Traverse linked list and compare words (case-insensitively)
     while (cursor != NULL)
     {
-        if (strcmp(cursor->word, lower_word) == 0)
+        if (strcasecmp(cursor->word, word) == 0)
         {
             return true;
         }
@@ -60,38 +109,6 @@ bool check(const char *word)
     }
 
     return false;
-}
-
-// Loads dictionary into memory, returning true if successful, else false
-bool load(const char *dictionary)
-{
-    FILE *file = fopen(dictionary, "r");
-    if (file == NULL)
-    {
-        return false;
-    }
-
-    char word[LENGTH + 1];
-
-    while (fscanf(file, "%45s", word) != EOF)
-    {
-        node *new_node = malloc(sizeof(node));
-        if (new_node == NULL)
-        {
-            fclose(file);
-            return false;
-        }
-
-        strcpy(new_node->word, word);
-        unsigned int index = hash(word);
-
-        new_node->next = table[index];
-        table[index] = new_node;
-        word_count++;
-    }
-
-    fclose(file);
-    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
@@ -103,15 +120,16 @@ unsigned int size(void)
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    for (unsigned int i = 0; i < N; i++)
+    for (int i = 0; i < HASHTABLE_SIZE; i++)
     {
-        node *cursor = table[i];
+        node *cursor = hashtable[i];
         while (cursor != NULL)
         {
-            node *tmp = cursor;
+            node *temp = cursor;
             cursor = cursor->next;
-            free(tmp);
+            free(temp);
         }
     }
+
     return true;
 }
