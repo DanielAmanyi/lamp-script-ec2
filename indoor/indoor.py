@@ -1,2 +1,3 @@
-input("Enter your input" )
+output = input("Enter your input" ).tolower()
+print(output)
 
