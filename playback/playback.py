@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
 
-usr = input("Enter anything you like: ")
+usr = input("Enter what you want: ")
 
-for x in usr:
-    if x =="":
-        x = "."
-    else:
-        print(usr)
+# Replace spaces with dots
+usr = usr.replace(" ", ".")
+
+print(usr)
