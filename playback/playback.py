@@ -3,6 +3,6 @@
 usr = input("Enter what you want: ")
 
 # Replace spaces with dots
-usr = usr.replace(" ", ".")
+usr = usr.replace(" ", "...")
 
 print(usr)
