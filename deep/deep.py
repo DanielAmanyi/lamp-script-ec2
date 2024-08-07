@@ -15,5 +15,5 @@ comprehension = ''' “All right,” said the computer, and settled into silence
 '''
 
 input("What is the Answer to the Great Question of Life, the Universe, and Everything? ")
-if input == "42" | "forty two" | "forty-two":
+if input == "42" or "forty two" or "forty-two":
     print("yes")
