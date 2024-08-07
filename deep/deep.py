@@ -14,9 +14,9 @@ comprehension = ''' “All right,” said the computer, and settled into silence
 — The Hitchhiker’s Guide to the Galaxy, Douglas Adams
 '''
 
-input("What is the Answer to the Great Question of Life, the Universe, and Everything? ")
-if input == "42" or "forty two" or "forty-two":
+usr = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ").strip().lower()
+wrong = "No"
+if usr in ["42", "forty two", "forty-two"]:
     print("yes")
 else:
-    if input ==! "42" or "forty two" or "forty-two":
-    print("No")
+    print(wrong)
