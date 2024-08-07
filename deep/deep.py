@@ -1,4 +1,4 @@
-“All right,” said the computer, and settled into silence again. The two men fidgeted. The tension was unbearable.
+comprehension = ''' “All right,” said the computer, and settled into silence again. The two men fidgeted. The tension was unbearable.
 “You’re really not going to like it,” observed Deep Thought.
 “Tell us!”
 “All right,” said Deep Thought. “The Answer to the Great Question…”
@@ -12,3 +12,8 @@
 “Forty-two,” said Deep Thought, with infinite majesty and calm.”
 
 — The Hitchhiker’s Guide to the Galaxy, Douglas Adams
+'''
+
+input("What is the Answer to the Great Question of Life, the Universe, and Everything? ")
+if input == "42" | "forty two" | "forty-two":
+    print("yes")
