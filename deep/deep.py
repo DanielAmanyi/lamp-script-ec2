@@ -33,7 +33,7 @@ comprehension = ''' “All right,” said the computer, and settled into silence
 '''
 
 # ask user a question using an input function
-question = input("What is the Answer to the Great Question of Life, the Universe, and Everything? " ).lower()
+question = input("What is the Answer to the Great Question of Life, the Universe, and Everything? " ).lower().strip()
 #note that all user input is a string until otherwise converted
 # compare input with system option; "42" , "forty-two", "forty two"
 options = ["42" , "forty-two", "forty two"]
