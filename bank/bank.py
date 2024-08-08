@@ -8,11 +8,11 @@ greeting = input("Hi Customer! \n").strip().lower()
 
 #logic to hunt for hello
 if "hello" in greeting:
-    print("0")
+    print("$0")
 
 # logic to hunt for h
 elif greeting[0] == "h":
-    print("20")
+    print("$20")
 
 # counter reaction
 else:
