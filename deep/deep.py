@@ -11,16 +11,16 @@ comprehension = ''' “All right,” said the computer, and settled into silence
 “Yes…!”
 “Is…”
 “Yes…!!!…?”
-“Forty-two,” said Deep Thought, win; "42" , "forty-two", "forty two"
-options = ["42" , "forty-two", "fth infinite majesty and calm.”
+“Forty-two,” said Deep Thought, with infinite majesty and calm.”
 
 — The Hitchhiker’s Guide to the Galaxy, Douglas Adams
 '''
 
 # ask user a question using an input function
-question = input("What is the Answer to the Great Question of Life, the Universe, and Everything? " ).lower().strip()
+question = input("What is the Answer to the Great Question of Life, the Universe, and Everything? " ).lower()
 #note that all user input is a string until otherwise converted
-# compare input with system optioorty two"]
+# compare input with system option; "42" , "forty-two", "forty two"
+options = ["42" , "forty-two", "forty two"]
 # logic to compare input with system option
 if question in options:
     print ("Yes")
