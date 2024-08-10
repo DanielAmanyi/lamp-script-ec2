@@ -30,5 +30,5 @@ def main():
         print("Invalid time format. Please use HH:MM format.")
 
 # Run the main function
-# if __name__ == "__main__":
+if __name__ == "__main__":
     main()
