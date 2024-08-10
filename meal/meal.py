@@ -13,8 +13,9 @@ def main():
 
 
 def convert(x,z):
-    y = x + '.'+ (z/60)
-    return (float(y))
+    hours = float(x)
+    minutes = float(z)
+    return 
 
 
 
