@@ -14,7 +14,7 @@ def main():
 
 def convert(x,z):
     y = x + '.'+ z
-    return (float(y))
+    return (float(y)/60)
 
 
 
