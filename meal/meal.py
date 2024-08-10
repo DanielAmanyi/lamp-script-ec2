@@ -1,4 +1,7 @@
-def convert(hours_str, minutes_str):
+
+    # Split the time string into hours and minutes
+    hours_str, minutes_str = time_str.split(':')
+
     # Convert hours and minutes to float
     hours = float(hours_str)
     minutes = float(minutes_str)
@@ -11,24 +14,21 @@ def main():
     time_input = input("What Time is it? (in HH:MM format) ")
 
     try:
-        # Split input into hours and minutes
-        hr, mins = time_input.split(':')
-
-        # Convert to decimal hours
-        time = convert(hr, mins)
+        # Convert time to decimal hours
+        time = convert(time_input)
 
         # Determine and print meal time based on the converted time
-        if 7.0 <= time < 8.0:
+        if 7.0 <= time <= 8.0:
             print("Breakfast time")
-        elif 12.0 <= time < 13.0:
+        elif 12.0 <= time <= 13.0:
             print("Lunch time")
-        elif 18.0 <= time < 19.0:
+        elif 18.0 <= time <= 19.0:
             print("Dinner time")
-        else:
-            print("Not meal time")
+        # If time does not fall within any meal time ranges, do nothing
 
     except ValueError:
         print("Invalid time format. Please use HH:MM format.")
 
 # Run the main function
-main()
+if __name__ == "__main__":
+    main()
