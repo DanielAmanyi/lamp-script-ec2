@@ -1,4 +1,10 @@
+def convert(time_str):
+    """
+    Convert a time string in HH:MM format to a float representing the time in hours.
 
+    :param time_str: Time in HH:MM format (e.g., "7:30" or "13:45")
+    :return: Time as a float (e.g., 7.5 or 13.75)
+    """
     # Split the time string into hours and minutes
     hours_str, minutes_str = time_str.split(':')
 
@@ -10,6 +16,9 @@
     return hours + minutes / 60.0
 
 def main():
+    """
+    Main function to prompt the user for a time and determine if it's breakfast, lunch, or dinner time.
+    """
     # Prompt user for time input in HH:MM format
     time_input = input("What Time is it? (in HH:MM format) ")
 
