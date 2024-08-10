@@ -13,8 +13,8 @@ def main():
 
 
 def convert(x,z):
-    y = x + '.'+ z
-    return (float(y)/60)
+    y = x + '.'+ (z/60)
+    return (float(y))
 
 
 
