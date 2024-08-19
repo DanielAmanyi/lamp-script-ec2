@@ -1,5 +1,3 @@
-
-
 def insert_(i):
     i = ("_"+i).lower()
     return i
