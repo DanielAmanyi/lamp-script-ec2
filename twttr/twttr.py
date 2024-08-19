@@ -13,4 +13,4 @@ for i in tweet[:]:
         tweet.remove(i)  # Remove the vowel
 
 # Convert the list back into a string and print the result
-print(''.join(tweet))
+print(''.join(tweet),end="")
