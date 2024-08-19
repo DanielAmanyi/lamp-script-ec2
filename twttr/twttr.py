@@ -1,5 +1,5 @@
 # Vowels Library
-vowels = ["a", "e", "i", "o", "u"]
+vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
 # Take in user input
 tweet = input("Enter your tweet: ")
