@@ -15,14 +15,14 @@ def is_valid(s):
     if not s[0:2].isalpha():
         return False
 
-    # Check for disallowed characters (periods, spaces, punctuation)
-    # if not s.isalnum():
-    #     return False
+    #Check for special characters (#*&^&$ etc)
+    if not s.isalnum():
+        return False
 
     # Check the position of numbers
     for i in range(len(s)):
         if s[i].isdigit():
-            # Numbers must come at the end, no letters allowed after a number
+            # check for numbers ending
             if not s[i:].isdigit():
                 return False
             # First number cannot be '0'
