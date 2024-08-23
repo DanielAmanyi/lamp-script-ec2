@@ -20,7 +20,7 @@ def main():
         print("Amount Due:", coke_price - total_coins)
 
         if total_coins >= coke_price:
-                print("Change Owed:", total_coins -coke_price)
+                print("Change Owed:", total_coins - coke_price)
 
 main()
 
