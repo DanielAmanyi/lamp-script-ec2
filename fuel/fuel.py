@@ -17,10 +17,15 @@ def prompt():
         try:
             fraction = input("Fraction: ")
             x, y = fraction.split('/')
+
+            # Ensure x and y are both integers
+            if not (x.isdigit() and y.isdigit()):
+                raise ValueError
+
             fraction = convert(x, y)
             return fraction
         except (ValueError, ZeroDivisionError):
-            # Go back to the prompt if there's an error
+            # Continue prompting in case of errors
             continue
 
 def convert(x, y):
