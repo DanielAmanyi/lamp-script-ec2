@@ -26,6 +26,6 @@ def prompt():
 def convert(x, y):
     num = float(x) / float(y)
     num = num * 100
-    return num
+    return round(num)
 
 main()
