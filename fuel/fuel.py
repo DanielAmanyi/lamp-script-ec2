@@ -1,7 +1,7 @@
 def main():
     while True:
         fraction = prompt()
-        if fraction is not False:
+        if fraction != False:
             break
 
     if fraction <= 1:
