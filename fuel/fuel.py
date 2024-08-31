@@ -4,9 +4,6 @@ def main():
         fraction = prompt()
         if fraction != False:
             break
-
-    if fraction <= 1:
-        print("E")
     elif fraction >= 99:
         print("F")
     else:
@@ -17,6 +14,8 @@ def prompt():
         try:
             fraction = input("Fraction: ")
             x, y = fraction.split('/')
+            if fraction <= 1:
+                print("E")
 
             # Ensure x and y are both integers
             if not (x.isdigit() and y.isdigit()):
