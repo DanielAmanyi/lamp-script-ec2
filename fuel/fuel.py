@@ -3,7 +3,7 @@ def main():
         fraction = prompt()
         if fraction != False:
             break
-
+    # set conditions for accptable range
     if fraction <= 1:
         print("E")
     elif fraction >= 99:
