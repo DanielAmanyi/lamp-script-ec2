@@ -1,8 +1,7 @@
-
 def main():
     while True:
         fraction = prompt()
-        if fraction != False:
+        if fraction is not False:
             break
 
     if fraction <= 1:
@@ -22,6 +21,13 @@ def prompt():
             if not (x.isdigit() and y.isdigit()):
                 raise ValueError
 
+            # Convert x and y to integers
+            x, y = int(x), int(y)
+
+            # Ensure numerator is less than or equal to denominator
+            if x > y:
+                raise ValueError
+
             fraction = convert(x, y)
             return fraction
         except (ValueError, ZeroDivisionError):
@@ -29,8 +35,7 @@ def prompt():
             continue
 
 def convert(x, y):
-    num = float(x) / float(y)
-    num = num * 100
+    num = (x / y) * 100
     return round(num)
 
 main()
