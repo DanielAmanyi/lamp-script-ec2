@@ -3,14 +3,14 @@ def main():
         fraction = prompt()
         if fraction != False:
             break
-    # set conditions for accptable range
+    # cnditions
     if fraction <= 1:
         print("E")
     elif fraction >= 99:
         print("F")
     else:
         print(f"{fraction}%")
-
+# input function
 def prompt():
     while True:
         try:
@@ -33,7 +33,7 @@ def prompt():
         except (ValueError, ZeroDivisionError):
             # Continue prompting in case of errors
             continue
-
+# the Arithmetic Logic
 def convert(x, y):
     num = (x / y) * 100
     return round(num)
