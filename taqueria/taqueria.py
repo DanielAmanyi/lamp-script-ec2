@@ -14,6 +14,12 @@ bill = []
 def get_item():
     for i in new_menu:
         if i in menu:
+           print(f"Total: ${menu[i]}")
+           break
+
+def get_total():
+    for i in new_menu:
+        if i in menu:
             bill.append(menu[i])
         else:
             get_input()
@@ -27,10 +33,11 @@ def get_input():
             item =input("Item:  ").title()
             new_menu.append(item)
             get_item()
+            continue
 
         except EOFError:
             # print(end="")
-            get_item()
+            get_total()
             # print()
             break
         except ValueError:
