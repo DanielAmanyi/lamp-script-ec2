@@ -15,7 +15,8 @@ def get_item():
     for i in new_menu:
         if i in menu:
             bill.append(menu[i])
-    print(f"\nTotal: ${sum(bill):.2f}")
+    print()  # This moves to a new line after Ctrl+D
+    print(f"${sum(bill):.2f}")
 
 
 # list(menu)
@@ -25,6 +26,7 @@ while True:
         item =input("Item:  ").title()
         new_menu.append(item)
     except EOFError:
+        print()
         get_item()
         break
 
