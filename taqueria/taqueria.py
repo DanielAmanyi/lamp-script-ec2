@@ -15,7 +15,7 @@ def get_item():
     for i in new_menu:
         if i in menu:
             bill.append(menu[i])
-    print(f"Total: ${sum(bill):.2f}")
+    print(f"\nTotal: ${sum(bill):.2f}")
 
 
 # list(menu)
