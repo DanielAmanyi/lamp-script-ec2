@@ -15,18 +15,26 @@ def get_item():
     for i in new_menu:
         if i in menu:
             bill.append(menu[i])
-    print()  # This moves to a new line after Ctrl+D
-    print(f"${sum(bill):.2f}")
-
+        else:
+            get_input()
+            break
+    print(f"Total: ${sum(bill):.2f}")
 
 # list(menu)
+def get_input():
+    while True:
+        try:
+            item =input("Item:  ").title()
+            new_menu.append(item)
+            get_item()
 
-while True:
-    try:
-        item =input("Item:  ").title()
-        new_menu.append(item)
-    except EOFError:
-        print()
-        get_item()
-        break
+        except EOFError:
+            # print(end="")
+            get_item()
+            # print()
+            break
+        except ValueError:
+            return False
+
+get_input()
 
