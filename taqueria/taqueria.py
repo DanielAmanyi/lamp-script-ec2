@@ -41,8 +41,8 @@ def get_input():
             get_total(item)
             # print()
             break
-        except ValueError:
-            return False
+        # except ValueError:
+        #     return False
 
 get_input()
 
