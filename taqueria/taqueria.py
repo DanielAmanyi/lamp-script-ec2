@@ -9,38 +9,16 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-new_menu = []
-bill = []
-def get_item():
-    for i in new_menu:
-        if i in menu:
-        #    print(f"Total: ${menu[i]}")
-           return menu[i]
 
+total = 0
+while True:
+    try:
+        item = input("Item: ").title()
+        if item in menu:
+            total = menu[item] + total
+            print(f"Total: ${total:.2f}")
+    except EOFError:
+        print("")
+        break
 
-def get_total():
-    for i in new_menu:
-        if i in menu:
-            bill.append(menu[i])
-        else:
-            get_input()
-            break
-    print(f"Total: ${sum(bill):.2f}")
-
-# list(menu)
-def get_input():
-    while True:
-        try:
-            item =input("Item:  ").title()
-            new_menu.append(item)
-            item = get_item()
-            # continue
-
-        except EOFError:
-            get_total()
-            break
-        # except ValueError:
-        #     return False
-
-get_input()
 
