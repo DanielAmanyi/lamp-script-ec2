@@ -36,4 +36,4 @@ for months in calendar:
         else:
              month = month
 # print(index)
-print(f"{year}-{month:02}-{date}")
+print(f"{year}-{month:02}-{date}",end="")
