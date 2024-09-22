@@ -1,19 +1,22 @@
-items = []
+items = {}
+
+items = {}
+
+def update_db(item):
+    if item in items:
+        items[item] += 1  # Increment count if item already exists
+    else:
+        items[item] = 1  # Initialize count for a new item
+    return
+
 while True:
     try:
-        item = input().upper()
-        items.append(item)
+        item = input("").upper()  # Take input and convert to uppercase
+        update_db(item)  # Update the items dictionary
+
     except EOFError:
-        items.sort()
-        # Using a dictionary to count occurrences
-        count_dict = {}
-        for name in items:
-            if name in count_dict:
-                count_dict[name] += 1
-            else:
-                count_dict[name] = 1
-        # Print each unique item with its count
-        for name in sorted(count_dict.keys()):
-            counter = count_dict[name]
-            print(f"{counter} {name}", end="\n")
+        # Sort items and print them in the required format
+        for item in sorted(items):
+            print(f"{items[item]} {item}")
         break
+
