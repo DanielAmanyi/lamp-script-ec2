@@ -22,7 +22,7 @@ year = ""
 while len(date) != 2 and len(year) != 4:
     try:
         month, date, year = re.split(r"[,/]", input("Date: ").strip())
-        print("MM/DD/YYY")
+        # print("MM/DD/YYY")
         month = month.title()
 
     except ValueError:
