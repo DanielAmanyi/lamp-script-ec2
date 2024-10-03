@@ -1,5 +1,5 @@
 import emoji
 
-
-names = emoji.emojize(":sleep:")
+english_text = input("Input: ")
+names = emoji.emojize(english_text)
 print(names)
