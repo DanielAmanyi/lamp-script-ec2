@@ -17,8 +17,9 @@ for i in sys.argv:
 for i in sys.argv:
     if len(sys.argv) == 2:
         if sys.argv[1] == '-f' or '--f'
-        text = input("Input: ")
-        print ("output:",f.renderText(text))
+            f = argv[2]
+            text = input("Input: ")
+            print ("output:",f.renderText(text))
         else:
             sys.exit
 
