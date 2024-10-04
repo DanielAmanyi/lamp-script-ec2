@@ -5,6 +5,7 @@ g = Figlet()
 
 
 # elif sys.argv == 0:
+
 text = input("Input: ")
 print("output:",g.renderText(text))
 
