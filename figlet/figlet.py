@@ -9,9 +9,9 @@ g = Figlet()
 # text = input("Input: ")
 # print("output:",g.renderText(text))
 
-prompt = sys.argv
-for i in prompt:
-    if len(prompt) == 2:
+# prompt = sys.argv
+for i in sys.argv:
+    if len(sys.argv) == 2:
         text = input("Input: ")
         print ("output:",f.renderText(text))
 
