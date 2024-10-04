@@ -6,8 +6,8 @@ g = Figlet()
 
 # elif sys.argv == 0:
 
-text = input("Input: ")
-print("output:",g.renderText(text))
+# text = input("Input: ")
+# print("output:",g.renderText(text))
 
 
 for i in sys.argv:
