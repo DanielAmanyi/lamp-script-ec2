@@ -10,6 +10,8 @@ for i in sys.argv:
     if len(sys.argv) == 1:
         text = input("Input: ")
         print("output:",g.renderText(text))
+    else:
+        print("Invalid usage")
         sys.exit()
 
 
