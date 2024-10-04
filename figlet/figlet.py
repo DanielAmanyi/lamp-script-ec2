@@ -23,6 +23,7 @@ for i in sys.argv:
             print ("output:",f.renderText(text))
             sys.exit()
         else:
-            sys.exit("Invalid usage")
+            print("Invalid usage")
+            sys.exit()
 
 
