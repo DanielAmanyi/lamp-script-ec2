@@ -14,5 +14,5 @@ print("output:",g.renderText(text))
 for i in sys.argv:
     if len(sys.argv) == 3:
         text = input("Input: ")
-        print ("output:",f.renderText(text))
+    print ("output:",f.renderText(text))
 
