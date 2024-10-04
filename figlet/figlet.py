@@ -1,5 +1,5 @@
 import sys
 from pyfiglet import Figlet
 f = Figlet(font='slant')
-
-print (f.renderText(sys.argv[1]))
+if sys.argv == 2:
+    print (f.renderText(sys.argv[1]))
