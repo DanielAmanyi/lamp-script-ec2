@@ -23,7 +23,9 @@ for i in sys.argv:
             text = input("Input: ")
             print ("output:",f.renderText(text))
             sys.exit()
-        else:
+        elif sys.argv[1] != '-f' or '--f':
             sys.exit("Invalid usage")
+
+# print(f"SysArgv1 = {sys.argv[1]}")
 
 
