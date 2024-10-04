@@ -7,10 +7,10 @@ g = Figlet()
 
 # Default Prompt
 for i in sys.argv:
-    if len(sys.argv) == 0:
+    if len(sys.argv) == 1:
         text = input("Input: ")
         print("output:",g.renderText(text))
-        break
+        sys.exit()
 
 
 # Scan for Command Line Argument
