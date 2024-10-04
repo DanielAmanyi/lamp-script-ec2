@@ -17,7 +17,7 @@ for i in sys.argv:
 for i in sys.argv:
     if len(sys.argv) == 3:
         if sys.argv[1] == '-f' or '--f':
-            f = Figlet(font=sys.argv[1])
+            f = Figlet(font=sys.argv[2])
             text = input("Input: ")
             print ("output:",f.renderText(text))
             sys.exit()
