@@ -21,7 +21,6 @@ for i in sys.argv:
             f = Figlet(font=sys.argv[2])
             text = input("Input: ")
             print ("output:",f.renderText(text))
-            sys.exit()
         else:
             sys.exit("Invalid usage")
 
