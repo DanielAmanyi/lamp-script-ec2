@@ -11,8 +11,7 @@ for i in sys.argv:
         text = input("Input: ")
         print("output:",g.renderText(text))
     else:
-        print("Invalid usage")
-        sys.exit()
+        sys.exit("Invalid usage")
 
 
 # Scan for Command Line Argument
@@ -24,7 +23,6 @@ for i in sys.argv:
             print ("output:",f.renderText(text))
             sys.exit()
         else:
-            print("Invalid usage")
-            sys.exit()
+            sys.exit("Invalid usage")
 
 
