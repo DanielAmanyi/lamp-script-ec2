@@ -10,6 +10,7 @@ for i in sys.argv:
     if len(sys.argv) == 1:
         text = input("Input: ")
         print("output:",g.renderText(text))
+        sys.exit()
     elif len(sys.argv) != 3:
         sys.exit("Invalid usage")
 
@@ -21,6 +22,7 @@ for i in sys.argv:
             f = Figlet(font=sys.argv[2])
             text = input("Input: ")
             print ("output:",f.renderText(text))
+            sys.exit()
         else:
             sys.exit("Invalid usage")
 
