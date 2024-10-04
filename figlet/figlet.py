@@ -9,7 +9,9 @@ g = Figlet()
 text = input("Input: ")
 print("output:",g.renderText(text))
 
-if sys.argv == 2:
-    text = input("Input: ")
-    print ("output:",f.renderText(text))
+
+for i in sys.argv:
+    if sys.argv == 2:
+        text = input("Input: ")
+        print ("output:",f.renderText(text))
 
