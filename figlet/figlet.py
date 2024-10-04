@@ -21,7 +21,9 @@ for i in sys.argv:
             text = input("Input: ")
             print ("output:",f.renderText(text))
             sys.exit()
+
         else:
             print("Invalid usage")
             sys.exit()
+
 
