@@ -7,7 +7,7 @@ g = Figlet()
 
 # Default Prompt
 for i in sys.argv:
-    if len(sys.argv) == 1:
+    if len(sys.argv) == 0:
         text = input("Input: ")
         print("output:",g.renderText(text))
         break
@@ -15,7 +15,7 @@ for i in sys.argv:
 
 # Scan for Command Line Argument
 for i in sys.argv:
-    # if len(sys.argv) == 3:
+    if len(sys.argv) == 3:
     if i == '-f' or '--f':
         f = Figlet(font=sys.argv[2])
         text = input("Input: ")
