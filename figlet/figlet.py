@@ -18,7 +18,7 @@ for i in sys.argv:
 # Scan for Command Line Argument
 for i in sys.argv:
     if len(sys.argv) == 3:
-        if sys.argv[1] == '-f' or '--f':
+        if i[1] == '-f' or '--f':
             f = Figlet(font=sys.argv[2])
             text = input("Input: ")
             print ("output:",f.renderText(text))
