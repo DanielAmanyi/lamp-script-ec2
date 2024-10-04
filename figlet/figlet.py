@@ -10,7 +10,7 @@ for i in sys.argv:
     if len(sys.argv) == 1:
         text = input("Input: ")
         print("output:",g.renderText(text))
-        sys.exit()
+
     elif len(sys.argv) != 3:
         sys.exit("Invalid usage")
 
@@ -18,7 +18,7 @@ for i in sys.argv:
 # Scan for Command Line Argument
 for i in sys.argv:
     if len(sys.argv) == 3:
-        if i[1] == '-f' or '--f':
+        if sys.argv[1] == '-f' or '--f':
             f = Figlet(font=sys.argv[2])
             text = input("Input: ")
             print ("output:",f.renderText(text))
