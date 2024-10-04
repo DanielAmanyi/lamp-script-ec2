@@ -5,7 +5,7 @@ f = Figlet(font='slant')
 
 # elif sys.argv == 0:
 text = input("Input: ")
-print("output:",renderText(text))
+print("output:",Figlet.renderText(text))
 
 if sys.argv == 2:
     text = input("Input: ")
