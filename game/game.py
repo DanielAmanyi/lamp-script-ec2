@@ -30,7 +30,7 @@ x = random.randint(1,level)
 print("random:", x)
 if guess > x:
     print("Too large!")
-    
+    get_level()
 elif guess < x:
     print("Too low!")
 else:
