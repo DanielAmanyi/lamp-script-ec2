@@ -4,8 +4,11 @@ guess = 0
 
 while True:
     try:
-        if level < 1 or guess < 1:
+        if level < 1:
             level = int(input("Level: "))
+        else:
+            break
+        if guess < 1:
             guess = int(input("Guess: "))
         else:
             break
