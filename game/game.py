@@ -33,7 +33,7 @@ while True:
     if guess > x:
         print("Too large!")
     elif guess < x:
-        print("Too low!")
+        print("Too small!")
     else:
         print("Just right!")
         break
