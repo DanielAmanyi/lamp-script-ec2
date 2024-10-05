@@ -30,11 +30,13 @@ print("random:", x)
 while True:
     if guess > x:
         print("Too large!")
+        continue
     else:
         break
 
     if guess < x:
         print("Too low!")
+        continue
     else:
         break
 
