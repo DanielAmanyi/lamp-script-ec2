@@ -5,14 +5,14 @@ guess = 0
 while level < 1:
     try:
         level = int(input("Level: "))
-        break
+        continue
     except ValueError:
         continue
 
 while guess < 1:
     try:
         guess = int(input("Guess: "))
-        break
+        continue
     except ValueError:
         continue
 
