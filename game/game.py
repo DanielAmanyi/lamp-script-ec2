@@ -2,11 +2,13 @@ import random
 level = 0
 guess = 0
 
-while level < 1 or guess < 1:
+while True:
     try:
-        level = int(input("Level: "))
-        guess = int(input("Guess: "))
-        break
+        if level < 1 or guess < 1:
+            level = int(input("Level: "))
+            guess = int(input("Guess: "))
+        else:
+            break
     except ValueError:
         continue
 if guess > random.randrange(level+1):
