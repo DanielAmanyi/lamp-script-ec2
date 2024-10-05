@@ -2,6 +2,13 @@ import random
 level = 0
 guess = 0
 
+while level < 1:
+    try:
+        level = int(input("Level: "))
+        break
+    except ValueError:
+        continue
+    
 while guess < 1:
     try:
         guess = int(input("Guess: "))
@@ -9,12 +16,7 @@ while guess < 1:
     except ValueError:
         continue
 
-while level < 1:
-    try:
-        level = int(input("Level: "))
-        break
-    except ValueError:
-        continue
+
 
 
 
