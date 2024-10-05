@@ -25,16 +25,15 @@ def get_guess():
 
 level = get_level()
 guess = get_guess()
-
-x = random.randint(1,level)
+x = random.randint(1, level)
 print("random:", x)
-if guess > x:
-    print("Too large!")
-    get_level()
-elif guess < x:
-    print("Too low!")
-else:
-    print("Just right!")
+while True:
+    if guess > x:
+        print("Too large!")
+    elif guess < x:
+        print("Too low!")
+
+print("Just right!")
 
 
 
