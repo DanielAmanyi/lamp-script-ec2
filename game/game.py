@@ -28,12 +28,14 @@ guess = get_guess()
 
 x = random.randint(1,level)
 print("random:",x)
-if guess > x:
-    print("Too large!")
-elif guess < x:
-    print("Too low!")
-else:
-    print("Just right!")
+while True:
+    guess = get_guess()
 
-
+    if guess > x:
+        print("Too large!")
+    elif guess < x:
+        print("Too low!")
+    else:
+        print("Just right!")
+        break  
 
