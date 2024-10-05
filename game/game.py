@@ -2,22 +2,29 @@ import random
 level = 0
 guess = 0
 
-while True:
+while guess < 1:
     try:
-        if level < 1:
-            level = int(input("Level: "))
-        else:
-            break
-        if guess < 1:
-            guess = int(input("Guess: "))
-        else:
-            break
+        guess = int(input("Guess: "))
+        break
     except ValueError:
         continue
-if guess > random.randrange(level+1):
+
+while level < 1:
+    try:
+        level = int(input("Level: "))
+        break
+    except ValueError:
+        continue
+
+
+
+x = random.randrange(level)
+if guess >  x:
     print("Too large!")
-elif guess < random.randrange(level+1):
+elif guess < x:
     print("Too low!")
 else:
-    print("Just righ!")
+    print("Just right!")
+
+
 
