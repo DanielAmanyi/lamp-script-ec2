@@ -27,9 +27,10 @@ level = get_level()
 guess = get_guess()
 
 x = random.randint(1,level)
-print(x)
+print("random:", x)
 if guess > x:
     print("Too large!")
+    
 elif guess < x:
     print("Too low!")
 else:
