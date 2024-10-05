@@ -23,16 +23,18 @@ def get_guess():
 
 
 
-level = get_level()
-guess = get_guess()
+
+
 x = random.randint(1, level)
 print("random:", x)
 
 while guess > x:
-        print("Too large!")
+    print("Too large!")
+    guess = get_guess()
 
 while guess < x:
-        print("Too low!")
+    print("Too low!")
+    level = get_level()
 
 
 
