@@ -10,7 +10,6 @@ while True:
     except EOFError:
         break
 
-mylist = p.join((f"Adieu, adieu, to {names}"))
-# mylist1 = p.join(("Liesl","Friedrich","Louisa"))
-# "apple, banana, and carrot"
 
+
+print("Adieu, adieu, to",p.join((names)))
