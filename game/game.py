@@ -8,7 +8,7 @@ while level < 1:
         break
     except ValueError:
         continue
-    
+
 while guess < 1:
     try:
         guess = int(input("Guess: "))
