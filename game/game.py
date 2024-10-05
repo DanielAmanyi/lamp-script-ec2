@@ -18,7 +18,7 @@ while level < 1:
 
 
 
-x = random.randrange(level)
+x = random.randrange(level+1)
 if guess > x:
     print("Too large!")
 elif guess < x:
