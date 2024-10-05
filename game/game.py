@@ -37,5 +37,5 @@ while True:
         print("Too low!")
     else:
         print("Just right!")
-        break  
+        break
 
