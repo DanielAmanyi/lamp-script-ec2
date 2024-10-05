@@ -8,3 +8,4 @@ while level < 1 or guess < 1:
         guess = int(input("Guess: "))
     except ValueError:
         continue
+if guess > random.randint(level)
