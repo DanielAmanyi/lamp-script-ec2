@@ -27,17 +27,13 @@ level = get_level()
 guess = get_guess()
 x = random.randint(1, level)
 print("random:", x)
+
 while guess > x:
         print("Too large!")
-    else:
-        break
-
 
 while guess < x:
         print("Too low!")
-        continue
-    else:
-        break
+
 
 
 print("Just right!")
