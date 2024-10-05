@@ -9,9 +9,9 @@ while level < 1 or guess < 1:
         break
     except ValueError:
         continue
-if guess > random.randrange(level):
+if guess > random.randrange(level+1):
     print("Too large!")
-elif guess < random.randrange(level):
+elif guess < random.randrange(level+1):
     print("Too low!")
 else:
     print("Just righ!")
