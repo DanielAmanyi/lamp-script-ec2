@@ -27,7 +27,7 @@ level = get_level()
 guess = get_guess()
 
 x = random.randint(1,level)
-print("random:",x)
+# print("random:",x)
 while True:
     guess = get_guess()
 
