@@ -6,9 +6,9 @@ import random
 def generate_integer(level):
     lower, upper = 1, 10  # Default range
     if level == 1:
-        lower, upper = 1, 10  # Easy level
+        lower, upper = 0, 9  # Easy level
     elif level == 2:
-        lower, upper = 10, 100  # Medium level
+        lower, upper = 10, 99  # Medium level
     elif level == 3:
         lower, upper = 100, 1000  # Hard level
     return random.randint(lower, upper)
