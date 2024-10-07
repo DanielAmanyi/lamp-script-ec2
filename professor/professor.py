@@ -51,7 +51,7 @@ def main():
         count += 1  # Increment the question count
 
         # End game after 10 questions
-    if count == 9:
+    if count == 10:
         print(f'Score: {total}')
 
 
