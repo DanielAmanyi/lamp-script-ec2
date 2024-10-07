@@ -18,7 +18,7 @@ def generate_integer(level):
 
 def main():
     count = 0  # Counter for how many questions have been asked
-    total = 0
+    total = 0  # Score tracker
     level = get_level()  # Get the level from the user
 
     # Outer loop to ask 10 questions
@@ -34,28 +34,31 @@ def main():
             except ValueError:
                 return None  # Return None if input is invalid
 
-        i = 0  # Attempt counter for each question1
+        i = 0  # Attempt counter for each question
+        correct_on_first_attempt = True
+
         while i < 3:
             sum_input = get_input()
 
             if sum_input == z:
-                total += 1
+                if correct_on_first_attempt:  # Award point only on first attempt
+                    total += 1
                 break  # Move to the next question if correct
             else:
                 print("EEE")
-                total -= 1
+                correct_on_first_attempt = False
                 i += 1
                 if i == 3:
                     print(f"{x} + {y} = {z}")
 
         count += 1  # Increment the question count
 
-        # End game after 10 questions
-    if count == 10:
-        print(f'Score: {total}')
-
+    # End game after 10 questions
+    print(f'{total}')  # Display the total score
 
 # Function to get the game level from the user
+
+
 def get_level():
     while True:
         try:
