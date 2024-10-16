@@ -7,7 +7,7 @@ def main():
             break
         except ValueError:
             continue
-    return 0
+    # return 0
 
 
 def value(greeting):
