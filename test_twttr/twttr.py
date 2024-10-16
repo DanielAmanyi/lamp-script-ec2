@@ -1,6 +1,5 @@
 # Vowels Library
 def main():
-    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     # Take in user input
     tweet = input("Enter your tweet: ")
     # Convert tweet to a list
@@ -8,6 +7,7 @@ def main():
     print(shorten(tweet))
 
 def shorten(tweet):
+    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
     # Loop through each character in the tweet
     for i in tweet[:]:
         if i in vowels:
