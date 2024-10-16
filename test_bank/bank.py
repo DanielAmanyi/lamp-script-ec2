@@ -1,9 +1,3 @@
-# def payout(h):
-    # twenty = "20"
-    # if h in reward[h]:
-    #     return twenty
-
-
 def main():
     # take in user input
     while True:
