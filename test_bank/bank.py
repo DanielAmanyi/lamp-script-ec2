@@ -4,8 +4,11 @@ def main():
     while True:
         try:
             greeting = input("Hi Customer! \n").strip().lower()
-            print(value(greeting))
-            break
+            if greeting:
+                print(value(greeting))
+                break
+            else:
+                continue
         except ValueError or IndexError:
             continue
     # return 0
