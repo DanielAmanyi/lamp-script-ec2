@@ -6,8 +6,13 @@
 
 def main():
     # take in user input
-    greeting = input("Hi Customer! \n").strip().lower()
-    print(value(greeting))
+    while True:
+        try:
+            greeting = input("Hi Customer! \n").strip().lower()
+            print(value(greeting))
+            break
+        except ValueError:
+            continue
 
 
 
