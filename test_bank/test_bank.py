@@ -5,6 +5,10 @@ from bank import value
 def test_value():
     assert value("Hello") == "$0"
 
+
+def test_notvalue():
+    assert value("*") == "$100"
+
 def test_h():
     assert value("H")     == "$20"
 
