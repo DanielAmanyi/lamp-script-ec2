@@ -7,7 +7,7 @@ def main():
             print(value(greeting))
             break
         except ValueError or IndexError:
-            sys.exit("Invalid Entry")
+            continue
     # return 0
 
 
