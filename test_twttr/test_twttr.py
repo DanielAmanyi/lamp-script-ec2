@@ -7,7 +7,7 @@ def test_shorten():
 
 
 def test_capson():
-    assert shorten("HELLO WORLD") == "HELLO WORLD"
+    assert shorten("HELLO WORLD") == "HLL WRLD"
 
 def test_camel_case():
-    assert shorten("HEllo wOrlD") == "Hello World"
+    assert shorten("HEllo wOrlD") == "Hll Wrld"
