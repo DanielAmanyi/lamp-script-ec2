@@ -6,15 +6,16 @@ def main():
     tweet = list(tweet)
     print(shorten(tweet))
 
+
 def shorten(tweet):
-    vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
-    # Loop through each character in the tweet
-    for i in tweet[:]:
-        if i in vowels:
-            tweet.remove(i)  # Remove the vowel
-# Convert the list back into a string and print the result
-    new_tweet = (''.join(tweet))
-    return new_tweet
+    tweet = list(tweet)  # Convert string to list
+    vowels = "aeiouAEIOU"
+
+    for char in tweet[:]:  # Iterate over a copy to avoid skipping
+        if char in vowels:
+            tweet.remove(char)  # Remove the vowel
+
+    return ''.join(tweet)  # Convert back to string
 
 
 
