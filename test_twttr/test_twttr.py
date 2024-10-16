@@ -4,7 +4,7 @@ from twttr import shorten
 
 def test_shorten():
     assert shorten("hello") == "hll"
-    assert
+
 
 def test_capson():
     assert shorten("HELLO WORLD") == "HELLO WORLD"
