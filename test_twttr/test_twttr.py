@@ -9,12 +9,12 @@ def test_capson():
     assert shorten("HELLO WORLD") == "HLL WRLD"
 
 def test_camel_case():
-    assert shorten("HEllo wOrlD") == "Hll WrlD"
+    assert shorten("HEllo wOrlD") == "Hll wrlD"
 
-def main():
-    test_shorten()
-    test_capson()
-    test_camel_case()
+# def main():
+#     test_shorten()
+#     test_capson()
+#     test_camel_case()
 
-if __name__ == __main__:
-    main()
+# if __name__ == __main__:
+#     main()
