@@ -5,7 +5,7 @@ def main():
             greeting = input("Hi Customer! \n").strip().lower()
             print(value(greeting))
             break
-        except ValueError:
+        except ValueError or IndexError:
             continue
     # return 0
 
