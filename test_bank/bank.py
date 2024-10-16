@@ -6,7 +6,7 @@ def main():
             print(value(greeting))
             break
         except ValueError or IndexError:
-            continue
+            False
     # return 0
 
 
