@@ -5,15 +5,13 @@ def main():
     tweet = input("Enter your tweet: ")
     # Convert tweet to a list
     tweet = list(tweet)
-    shorten(tweet)
-    print(shor)
+    print(shorten(tweet))
 
 def shorten(tweet):
-
     # Loop through each character in the tweet
     for i in tweet[:]:
-    if i in vowels:
-        tweet.remove(i)  # Remove the vowel
+        if i in vowels:
+            tweet.remove(i)  # Remove the vowel
 # Convert the list back into a string and print the result
     new_tweet = (''.join(tweet), end="")
     return new_tweet
