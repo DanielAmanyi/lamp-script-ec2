@@ -11,7 +11,8 @@ def main():
                 continue
         except ValueError or IndexError:
             continue
-    return 0
+        sys.exit(0)
+
 
 
 def value(greeting):
