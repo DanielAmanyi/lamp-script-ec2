@@ -15,6 +15,10 @@ def test_int():
     assert shorten("1") == "1"
     assert shorten("daniel-1") == "dnl-1"
 
+def test_punctuations():
+    assert shorten("Hello, Daniel") == "Hll, Dnl"
+
+
 
 # def main():
 #     test_shorten()
