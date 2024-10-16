@@ -13,7 +13,7 @@ def shorten(tweet):
         if i in vowels:
             tweet.remove(i)  # Remove the vowel
 # Convert the list back into a string and print the result
-    new_tweet = (''.join(tweet), end="")
+    new_tweet = (''.join(tweet))
     return new_tweet
 
 
