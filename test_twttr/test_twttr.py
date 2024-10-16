@@ -12,7 +12,7 @@ def test_camel_case():
     assert shorten("HEllo wOrlD") == "Hll wrlD"
 
 def test_int():
-    assert shorten(1) == 1
+    assert shorten("1") == "1"
     assert shorten("daniel-1") == "dnl-1"
 
 
