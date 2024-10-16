@@ -7,7 +7,7 @@
 def main():
     # take in user input
     greeting = input("Hi Customer! \n").strip().lower()
-    print(greeting)
+    print(value(greeting))
 
 
 
