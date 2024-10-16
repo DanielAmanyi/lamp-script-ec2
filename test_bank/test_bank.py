@@ -13,8 +13,5 @@ def test_h():
     assert value("h")    == "$20"
 
 def test_not_Hello():
-    assert value("Hello") != "$100"
-
-
-def test_not_Hello2():
-    assert value("H")      != "$100"
+    assert value("Hello") == "$0"  # Check for "Hello"
+    assert value("H") == "$20"      # Check for "H"
