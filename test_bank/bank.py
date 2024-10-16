@@ -15,8 +15,6 @@ def main():
             continue
 
 
-
-
 def value(greeting):
     # logic to hunt for hello
     if "hello" in greeting:
