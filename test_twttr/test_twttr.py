@@ -11,6 +11,11 @@ def test_capson():
 def test_camel_case():
     assert shorten("HEllo wOrlD") == "Hll wrlD"
 
+def test_int():
+    assert shorten(1) == 1
+    assert shorten()
+
+
 # def main():
 #     test_shorten()
 #     test_capson()
