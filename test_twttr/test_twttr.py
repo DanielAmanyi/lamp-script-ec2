@@ -3,10 +3,11 @@ from twttr import shorten
 
 
 def test_shorten():
-    assert "hello" == "hll"
+    assert shorten("hello") == "hll"
+    assert
 
 def test_capson():
-    assert "HELLO WORLD" == "HELLO WORLD"
+    assert shorten("HELLO WORLD") == "HELLO WORLD"
 
 def test_camel_case():
-    assert "HEllo wOrlD" == "Hello World"
+    assert shorten("HEllo wOrlD") == "Hello World"
