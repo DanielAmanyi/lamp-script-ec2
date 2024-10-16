@@ -2,7 +2,11 @@ import pytest
 from twttr import shorten
 
 
-def test_shorten:
+def test_shorten():
     assert "hello" == "hll"
+
+def test_capson():
     assert "HELLO WORLD" == "HELLO WORLD"
-    assert "HEllo wOrlD" ==
+
+def test_camel_case():
+    assert "HEllo wOrlD" == "Hello World"
