@@ -1,3 +1,4 @@
+import sys
 def main():
     # take in user input
     while True:
@@ -6,7 +7,7 @@ def main():
             print(value(greeting))
             break
         except ValueError or IndexError:
-            False
+            sys.exit("Invalid Entry")
     # return 0
 
 
