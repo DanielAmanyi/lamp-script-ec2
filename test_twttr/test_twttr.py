@@ -3,5 +3,6 @@ from twttr import shorten
 
 
 def test_shorten:
-    assert "Hello" == "hll"
-    
+    assert "hello" == "hll"
+    assert "HELLO WORLD" == "HELLO WORLD"
+    assert "HEllo wOrlD" ==
