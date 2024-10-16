@@ -13,7 +13,7 @@ def test_camel_case():
 
 def test_int():
     assert shorten(1) == 1
-    assert shorten()
+    assert shorten(-1) == -1
 
 
 # def main():
